@@ -24,9 +24,28 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/css/bootstrap.min.css",
+        "src/font-awesome/css/font-awesome.min.css",
+        "src/plugins/cubeportfolio/css/cubeportfolio.min.css",
+        "src/css/nivo-lightbox.css" ,
+        "src/css/nivo-lightbox-theme/default/default.css" ,
+        "src/css/owl.carousel.css"  ,
+        "src/css/owl.theme.css",
+        "src/css/animate.css",
+        "src/css/style.css" 
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/jquery.easing.min.js",
+              "src/assets/js/wow.min.js",
+              "src/assets/js/jquery.scrollTo.js",
+              "src/assets/js/jquery.appear.js",
+              "src/assets/js/stellar.js",
+              "src/assets/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/nivo-lightbox.min.js",
+              "src/assets/js/custom.js"]
           },
           "configurations": {
             "production": {
