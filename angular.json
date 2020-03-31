@@ -35,17 +35,16 @@
         "src/css/style.css" 
             ],
             "scripts": [
-              "src/assets/js/jquery.min.js",
-              "src/assets/js/bootstrap.min.js",
-              "src/assets/js/jquery.easing.min.js",
-              "src/assets/js/wow.min.js",
-              "src/assets/js/jquery.scrollTo.js",
-              "src/assets/js/jquery.appear.js",
-              "src/assets/js/stellar.js",
-              "src/assets/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js",
-              "src/assets/js/owl.carousel.min.js",
-              "src/assets/js/nivo-lightbox.min.js",
-              "src/assets/js/custom.js"]
+              "src/js/jquery.min.js",
+              "src/js/bootstrap.min.js",
+              "src/js/jquery.easing.min.js",              
+              "src/js/jquery.scrollTo.js",
+              "src/js/jquery.appear.js",
+              "src/js/stellar.js",
+              "src/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js",
+              "src/js/owl.carousel.min.js",
+              "src/js/nivo-lightbox.min.js",
+              "src/js/custom.js"]
           },
           "configurations": {
             "production": {
