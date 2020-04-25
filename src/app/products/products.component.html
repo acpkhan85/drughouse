@@ -22,28 +22,16 @@
           <hr>
 
           <!-- BEGIN FILTER BY CATEGORY -->
-          <div class="filter-name">Brand</div>
-          <div class="checkbox">
-            <label><input type="checkbox" class="icheck"> Application</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" class="icheck"> Design</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" class="icheck"> Desktop</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" class="icheck"> Management</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" class="icheck"> Mobile</label>
-          </div>
+          <div class="filter-name">Product</div>
+          <div class="checkbox" *ngFor="let productType of productTypes">
+            <label><input type="checkbox" class="icheck"> {{productType}}</label>
+          </div>          
           <!-- END FILTER BY CATEGORY -->
 
           <div class="padding"></div>
 
           <!-- BEGIN FILTER BY DATE -->
-          <div class="filter-name">Content</div>
+          <!-- <div class="filter-name">Content</div>
           <div class="checkbox">
             <label><input type="checkbox" class="icheck"> Application</label>
           </div>
@@ -58,7 +46,7 @@
           </div>
           <div class="checkbox">
             <label><input type="checkbox" class="icheck"> Mobile</label>
-          </div>
+          </div> -->
           <!-- END FILTER BY DATE -->
 
           <div class="padding"></div>         
@@ -66,88 +54,22 @@
         <div class="col-md-1 space"></div>
         <div class="col-md-9 search-result">
           <div class="row"><div class="page-title">Home > Products</div></div>
-          <hr>
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="card col-lg-3">
+          <hr>         
+          <div class="row" *ngFor="let item of arr">
+            <div class="col-lg-12" >
+              <div class="card col-lg-3" *ngFor="let obj of item">
                 <a href="javascript:void(0);">
-                  <img src="assets/img/medicine/1.jpg" alt="Denim Jeans" style="width:100%">
-                  <div class="product-name">ARBOLIEF 150MG</div>
-                  <div class="content">CARBOPLATIN</div>
-                  <div class="pack">VIAL</div>
+                  <img src="assets/img/products/{{obj.ImgName}}" alt="Denim Jeans" style="width:100%">
+                  <div class="product-name">{{obj.BrandName}}</div>
+                  <div class="content">{{obj.CONTENT}}</div>
+                  <div class="pack">{{obj.Pack}}</div>
                   <!-- <p><button>View</button></p> -->
                 </a>
               </div>
-              <div class="card col-lg-3">
-                <a href="javascript:void(0);">
-                  <img src="assets/img/medicine/1.jpg" alt="Denim Jeans" style="width:100%">
-                  <div class="product-name">ARBOLIEF 150MG</div>
-                  <div class="content">CARBOPLATIN</div>
-                  <div class="pack">VIAL</div>
-                  <!-- <p><button>View</button></p> -->
-                </a>
-              </div>
-              <div class="card col-lg-3">
-                <a href="javascript:void(0);">
-                  <img src="assets/img/medicine/1.jpg" alt="Denim Jeans" style="width:100%">
-                  <div class="product-name">ARBOLIEF 150MG</div>
-                  <div class="content">CARBOPLATIN</div>
-                  <div class="pack">VIAL</div>
-                  <!-- <p><button>View</button></p> -->
-                </a>
-              </div>
-              <div class="card col-lg-3">
-                <a href="javascript:void(0);">
-                  <img src="assets/img/medicine/1.jpg" alt="Denim Jeans" style="width:100%">
-                  <div class="product-name">ARBOLIEF 150MG</div>
-                  <div class="content">CARBOPLATIN</div>
-                  <div class="pack">VIAL</div>
-                  <!-- <p><button>View</button></p> -->
-                </a>
-              </div>
+              
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-12">
-
-              <div class="card col-lg-3">
-                <a href="javascript:void(0);">
-                  <img src="assets/img/medicine/1.jpg" alt="Denim Jeans" style="width:100%">
-                  <div class="product-name">ARBOLIEF 150MG</div>
-                  <div class="content">CARBOPLATIN</div>
-                  <div class="pack">VIAL</div>
-                  <!-- <p><button>View</button></p> -->
-                </a>
-              </div>
-              <div class="card col-lg-3">
-                <a href="javascript:void(0);">
-                  <img src="assets/img/medicine/1.jpg" alt="Denim Jeans" style="width:100%">
-                  <div class="product-name">ARBOLIEF 150MG</div>
-                  <div class="content">CARBOPLATIN</div>
-                  <div class="pack">VIAL</div>
-                  <!-- <p><button>View</button></p> -->
-                </a>
-              </div>
-              <div class="card col-lg-3">
-                <a href="javascript:void(0);">
-                  <img src="assets/img/medicine/1.jpg" alt="Denim Jeans" style="width:100%">
-                  <div class="product-name">ARBOLIEF 150MG</div>
-                  <div class="content">CARBOPLATIN</div>
-                  <div class="pack">VIAL</div>
-                  <!-- <p><button>View</button></p> -->
-                </a>
-              </div>
-              <div class="card col-lg-3">
-                <a href="javascript:void(0);">
-                  <img src="assets/img/medicine/1.jpg" alt="Denim Jeans" style="width:100%">
-                  <div class="product-name">ARBOLIEF 150MG</div>
-                  <div class="content">CARBOPLATIN</div>
-                  <div class="pack">VIAL</div>
-                  <!-- <p><button>View</button></p> -->
-                </a>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </div>
     </div>

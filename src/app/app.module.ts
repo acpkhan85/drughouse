@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { PartnerComponent } from './partner/partner.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
+import { HttpClientModule }    from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'product-detail', component: DetailViewComponent }
@@ -44,6 +45,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes     
     )
