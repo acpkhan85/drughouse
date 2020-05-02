@@ -32,7 +32,9 @@
               "src/css/owl.carousel.css",
               "src/css/owl.theme.css",
               "src/css/animate.css",
-              "src/css/style.css"
+              "src/css/style.css",
+              "node_modules/ag-grid-community/dist/styles/ag-grid.css",
+              "node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css"
             ],
             "scripts": [
               "src/js/jquery.min.js",

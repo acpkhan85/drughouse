@@ -1,0 +1,33 @@
+.container{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+.home-section{
+    padding-top: 91px;
+      }
+      .page-title{
+        font-size: 18px;
+        text-transform: uppercase;
+        width: 67%;
+        font-weight: bold;
+        letter-spacing: .3px;
+        display: inline-block;
+        padding: 10px;
+      }
+
+.add-product{
+  margin-left: 1%;
+  margin-bottom: 1%;
+}      
+.modal{
+  top:8%;
+}
+.btn.btn-default
+{
+  color: #333;
+}
+.modal-title{
+  font-size: 18px;
+  line-height: 1em;
+}

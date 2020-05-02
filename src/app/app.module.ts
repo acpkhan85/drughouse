@@ -19,6 +19,12 @@ import { PricingComponent } from './pricing/pricing.component';
 import { PartnerComponent } from './partner/partner.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { HttpClientModule }    from '@angular/common/http';
+import { AgGridModule } from 'ag-grid-angular';
+import { ProductAdminViewComponent } from './product-admin-view/product-admin-view.component';
+import { AngularEditorModule } from '@kolkov/angular-editor';
+import { ButtonRendererComponent } from './renderer/button-renderer.component';
+import { FileuploadComponent } from './fileupload/fileupload.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: 'product-detail', component: DetailViewComponent }
@@ -40,7 +46,9 @@ const appRoutes: Routes = [
     FooterComponent,
     PricingComponent,
     PartnerComponent,
-    TestimonialComponent
+    TestimonialComponent,
+    ProductAdminViewComponent,
+    FileuploadComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +56,10 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(
       appRoutes     
-    )
+    ),
+    AgGridModule.withComponents([ButtonRendererComponent]),
+    AngularEditorModule,
+    ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,76 @@
+<section id="products" class="home-section bg-gray paddingbot-60">
+
+
+  <div class="container">   
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="page-title">Home > Products</div>
+        </div>
+        <hr>
+        <div class="row">
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="btn btn-info btn-sm add-product" data-toggle="modal" data-target="#myModal">Add New Product</button>
+    
+        </div>
+        <ag-grid-angular style="width: 100%; height: 500px;" class="ag-theme-alpine" [rowData]="rowData" [frameworkComponents]="frameworkComponents"
+          [columnDefs]="columnDefs" (gridReady)="onGridReady($event)"></ag-grid-angular>
+
+      </div>
+    </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Add New Product</h4>
+          </div>
+          <div class="modal-body">
+            <form [formGroup]="productForm">
+              <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" formControlName="name">               
+              </div>
+              <div class="form-group">
+                <label>Type</label>
+                <select class="form-control" formControlName="type">
+                  <option value="">Select</option>
+                  <option>Oncology</option>
+                  <option>Anti Serum</option>
+                  <option>Vaccines</option>
+                  <option>HIV Medicine</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Detail</label>
+                <angular-editor formControlName="detail" [config]="editorConfig"></angular-editor>            
+              </div>     
+              <div class="form-group">
+                <label>Image</label>
+                <file-upload formControlName="productImg"></file-upload>          
+              </div>     
+              <div class="form-group">
+                <div class="checkbox">
+                  <label><input formControlName="showPrice" type="checkbox" value="">Show Price</label>
+                  <input type="text" formControlName="price"  class="form-control"> 
+                </div>
+                <div class="checkbox">
+                  <label><input formControlName="showEnquiry" type="checkbox" value="">Enquire</label>
+                </div>
+              </div>                
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-info" data-dismiss="modal" (click)="onSubmit()">Save</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>

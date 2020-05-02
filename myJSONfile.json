@@ -4,285 +4,420 @@
       "Type": "Oncology",
       "SrNo": 1,
       "BrandName": "ARBOLIEF 150MG",
-      "CONTENT": "CARBOPLATIN",
+      "Content": "CARBOPLATIN",
       "Pack": "VIAL",
-      "ImgName":"anti-rabies-injection.jpg"
+      "ImgName": "anti-rabies-injection.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 2,
       "BrandName": "ARBOLIEF 450MG",
-      "CONTENT": "CARBOPLATIN",
+      "Content": "CARBOPLATIN",
       "Pack": "VIAL",
-      "ImgName":"test.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 3,
       "BrandName": "ANESMOS 1MG TAB.",
-      "CONTENT": "ANASTRAZOLE",
+      "Content": "ANASTRAZOLE",
       "Pack": "10TAB",
-      "ImgName":"havrix-injection.jpg"
+      "ImgName": "havrix-injection.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 4,
       "BrandName": "ARUNER-G POWDER",
-      "CONTENT": "PROTIEN POWDER",
+      "Content": "PROTIEN POWDER",
       "Pack": "200GM",
-      "ImgName":"hepatitis-a-adult-vaccine.png"
+      "ImgName": "hepatitis-a-adult-vaccine.png"
     },
     {
       "Type": "Oncology",
       "SrNo": 5,
       "BrandName": "BROANGE 2MG INJ",
-      "CONTENT": "BORTEZUMAB",
+      "Content": "BORTEZUMAB",
       "Pack": "1VAIL",
-      "ImgName":"hepatitis-b-vaccine.png"
+      "ImgName": "hepatitis-b-vaccine.png"
     },
     {
       "Type": "Oncology",
       "SrNo": 6,
       "BrandName": "BZYNICE MOUTHWASH 300ML",
-      "CONTENT": "BENZYDAMINE",
+      "Content": "BENZYDAMINE",
       "Pack": "300ml",
-      "ImgName":"oral-cholera-vaccine.jpg"
+      "ImgName": "oral-cholera-vaccine.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 7,
       "BrandName": "BZYNICE MOUTHWASH 500ML",
-      "CONTENT": "BENZYDAMINE",
+      "Content": "BENZYDAMINE",
       "Pack": "500ML",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 8,
       "BrandName": "CABDIAN 500MG TAB",
-      "CONTENT": "CAPECITABINE",
+      "Content": "CAPECITABINE",
       "Pack": "10TAB",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 9,
       "BrandName": "CELQLIEF CAP.",
-      "CONTENT": "NANO CURCUMINE WITH LYCOPENE",
+      "Content": "NANO CURCUMINE WITH LYCOPENE",
       "Pack": "30 CAP",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 10,
       "BrandName": "COTZOON MOUTH PAINT 100ML",
-      "CONTENT": "CLOTRIMAZOLE MOUTH PAINT",
+      "Content": "CLOTRIMAZOLE MOUTH PAINT",
       "Pack": "50ML",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 11,
       "BrandName": "DEXROID 4MG TAB.",
-      "CONTENT": "DEXAMETHASOME",
+      "Content": "DEXAMETHASOME",
       "Pack": "4TAB",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 12,
       "BrandName": "DEXROID 8MG TAB.",
-      "CONTENT": "DEXAMETHASOME",
+      "Content": "DEXAMETHASOME",
       "Pack": "4TAB",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 13,
       "BrandName": "ERBIKAS 10MG INJ.",
-      "CONTENT": "EPIRUBICINE",
+      "Content": "EPIRUBICINE",
       "Pack": "VIAL",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 14,
       "BrandName": "ERBIKAS 50MG INJ.",
-      "CONTENT": "EPIRUBICINE",
+      "Content": "EPIRUBICINE",
       "Pack": "VIAL",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 16,
       "BrandName": "MATITON",
-      "CONTENT": "IMATINIB",
+      "Content": "IMATINIB",
       "Pack": "10TAB",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 17,
       "BrandName": "LIEFBINE 1GM INJ",
-      "CONTENT": "GEMCITABINE",
+      "Content": "GEMCITABINE",
       "Pack": "1VAIL",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 18,
       "BrandName": "LIEFBINE 200MG INJ",
-      "CONTENT": "GEMCITABINE",
+      "Content": "GEMCITABINE",
       "Pack": "1VAIL",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 19,
       "BrandName": "LIEFGROSS SPRAY",
-      "CONTENT": "ORAL SORBITRATE",
+      "Content": "ORAL SORBITRATE",
       "Pack": "50ML",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 20,
       "BrandName": "LIEFGROSS TAB",
-      "CONTENT": "ORAL SORBITRATE",
+      "Content": "ORAL SORBITRATE",
       "Pack": "90TAB",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 21,
       "BrandName": "ONUPLAT 100MG INJ.",
-      "CONTENT": "OXALIPLATIN",
+      "Content": "OXALIPLATIN",
       "Pack": "1VAIL",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 22,
       "BrandName": "ONUPLAT 50MG INJ.",
-      "CONTENT": "OXALIPLATIN",
+      "Content": "OXALIPLATIN",
       "Pack": "1VAIL",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 23,
       "BrandName": "PACLIDIAN 100MG INJ.",
-      "CONTENT": "PACLITAXEL",
+      "Content": "PACLITAXEL",
       "Pack": "VIAL",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 24,
       "BrandName": "PACLIDIAN 260MG INJ.",
-      "CONTENT": "PACLITAXEL",
+      "Content": "PACLITAXEL",
       "Pack": "VIAL",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 25,
       "BrandName": "PACLIDIAN 30 MG INJ",
-      "CONTENT": "PACLITAXEL",
+      "Content": "PACLITAXEL",
       "Pack": "VIAL",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 26,
       "BrandName": "RACDIAN CREAM",
-      "CONTENT": "RADIATION CREAM",
+      "Content": "RADIATION CREAM",
       "Pack": "100GM",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 27,
       "BrandName": "TAXEBREW 120MG INJ.",
-      "CONTENT": "DOCETAXEL",
+      "Content": "DOCETAXEL",
       "Pack": "VIAL",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 28,
       "BrandName": "CISPLATIN 10MG",
-      "CONTENT": "CISPLATIN",
+      "Content": "CISPLATIN",
       "Pack": "VIAL",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 29,
       "BrandName": "CISPLATIN 50MG",
-      "CONTENT": "CISPLATIN",
+      "Content": "CISPLATIN",
       "Pack": "VIAL",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 30,
       "BrandName": "LEUCOVARIN 50MG",
-      "CONTENT": "LEUCOVARIN",
+      "Content": "LEUCOVARIN",
       "Pack": "VIAL ",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 31,
       "BrandName": "RACDIAN 30MG",
-      "CONTENT": "RADIATION CREAM",
+      "Content": "RADIATION CREAM",
       "Pack": "30MG",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
       "Type": "Oncology",
       "SrNo": 32,
       "BrandName": "LIEFRASS TABLET",
-      "CONTENT": "WHEAT GRASS 500MG",
+      "Content": "WHEAT GRASS 500MG",
       "Pack": "STRIP",
-      "ImgName":"1.jpg"
+      "ImgName": "1.jpg"
     },
     {
-      "Type": "Oncology",
-      "SrNo": null,
-      "BrandName": "",
-      "CONTENT": "",
-      "Pack": "",
-      "ImgName":"1.jpg"
+      "SrNo": 1,
+      "Type": "HIV Medicine",
+      "BrandName": "TAFFIC",
+      "Content": "TENOFOVIR ALAFENAMIDE 25MG + EMTRICITABINE 200MG + BICTEGRAVIR 50MG ",
+      "Pack": "30 TAB",
+      "ImgName": "1.jpg"
     },
     {
-      "Type": "Oncology",
-      "SrNo": null,
-      "BrandName": "",
-      "CONTENT": "",
-      "Pack": "",
-      "ImgName":"1.jpg"
+      "SrNo": 2,
+      "Type": "HIV Medicine",
+      "BrandName": "TRUSTIVA",
+      "Content": "TENOFOVIR 300MG +EMTRICITABINE 200MG + EFAVIRENZ 600MG",
+      "Pack": "30 TAB",
+      "ImgName": "1.jpg"
     },
     {
-      "Type": "Oncology",
-      "SrNo": null,
-      "BrandName": "",
-      "CONTENT": "",
-      "Pack": "",
-      "ImgName":"1.jpg"
+      "SrNo": 3,
+      "Type": "HIV Medicine",
+      "BrandName": "TENOLAM-E",
+      "Content": "TENOFOVIR 300MG + LAMIVUDINE 300MG + EFAVIRENZ 600MG",
+      "Pack": "30 TAB",
+      "ImgName": "1.jpg"
     },
     {
-      "Type": "Oncology",
-      "SrNo": null,
-      "BrandName": "",
-      "CONTENT": "",
-      "Pack": "",
-      "ImgName":"1.jpg"
+      "SrNo": 4,
+      "Type": "HIV Medicine",
+      "BrandName": "ZIDOLAM-N",
+      "Content": "ZIDOVUDINE 300MG + LAMIVUDINE 150 MG +NEVIRAPINE 200MG ",
+      "Pack": "60 TAB",
+      "ImgName": "1.jpg"
+    },
+    {
+      "SrNo": 5,
+      "Type": "HIV Medicine",
+      "BrandName": "NEVILAST-30",
+      "Content": "STAVUDINE 300MG + LAMIVUDINE 150MG +NEVIRAPINE 200MG",
+      "Pack": "60 TAB",
+      "ImgName": "1.jpg"
+    },
+    {
+      "SrNo": 6,
+      "Type": "HIV Medicine",
+      "BrandName": "TAFERON-EM 10",
+      "Content": "TENOFOVIR ALAFENAMIDE 10MG + EMTRICITAVINE 200MG",
+      "Pack": "30 TAB",
+      "ImgName": "hepatitis-a-adult-vaccine.png"
+    },
+    {
+      "SrNo": 7,
+      "Type": "HIV Medicine",
+      "BrandName": "TAFERO-EM",
+      "Content": "TENOFOVIR ALAFENAMIDE 25 MG +Emtricitabine 200mg ",
+      "Pack": "30 TAB",
+      "ImgName": "hepatitis-a-adult-vaccine.png"
+    },
+    {
+      "SrNo": 8,
+      "Type": "HIV Medicine",
+      "BrandName": "TENOF-EM",
+      "Content": "TENOFOVIR 300MG + EMTRICITABINE 200MG",
+      "Pack": "30 TAB",
+      "ImgName": "hepatitis-a-adult-vaccine.png"
+    },
+    {
+      "SrNo": 9,
+      "Type": "HIV Medicine",
+      "BrandName": "TENOLAM",
+      "Content": "TENOFOVIR 300MG + LAMIVUDINE 300MG  ",
+      "Pack": "30 TAB",
+      "ImgName": "hepatitis-a-adult-vaccine.png"
+    },
+    {
+      "SrNo": 10,
+      "Type": "HIV Medicine",
+      "BrandName": "ABALAM-600",
+      "Content": "ABACAVIR 600MG +LAMIVUDINE 300MG",
+      "Pack": "30 TAB",
+      "ImgName": "hepatitis-a-adult-vaccine.png"
+    },
+    {
+      "SrNo": 11,
+      "Type": "HIV Medicine",
+      "BrandName": "ZIDOLAM ",
+      "Content": "ZIDOVUDINE 300MG +LAMIVUDINE 150MG ",
+      "Pack": "60 TAB",
+      "ImgName": "hepatitis-a-adult-vaccine.png"
+    },
+    {
+      "SrNo": 12,
+      "Type": "HIV Medicine",
+      "BrandName": "LAMISTAR-30",
+      "Content": "STAVUDINE 30MG + LAMIVUDINE 150MG ",
+      "Pack": "60 TAB",
+      "ImgName": "hepatitis-a-adult-vaccine.png"
+    },
+    {
+      "SrNo": 13,
+      "Type": "HIV Medicine",
+      "BrandName": "ESTIVA-600",
+      "Content": "EFAVIRENZ 600MG",
+      "Pack": "30 TAB",
+      "ImgName": "hepatitis-a-adult-vaccine.png"
+    },
+    {
+      "SrNo": 14,
+      "Type": "HIV Medicine",
+      "BrandName": "NEVIVIR ",
+      "Content": "NEVIRAPINE 200MG ",
+      "Pack": "10/60 TAB",
+      "ImgName": "hepatitis-a-adult-vaccine.png"
+    },
+    {
+      "SrNo": 15,
+      "Type": "HIV Medicine",
+      "BrandName": "HEPTAVIR-100",
+      "Content": "LAMIVUDINE 100MG",
+      "Pack": "10 TAB",
+      "ImgName": "hepatitis-a-adult-vaccine.png"
+    },
+    {
+      "SrNo": 16,
+      "Type": "HIV Medicine",
+      "BrandName": "HEPTAVIR-150",
+      "Content": "LAMIVUDINE 150MG",
+      "Pack": "10 TAB",
+      "ImgName": "hepatitis-a-adult-vaccine.png"
+    },
+    {
+      "SrNo": 17,
+      "Type": "HIV Medicine",
+      "BrandName": "TENOF-300",
+      "Content": "TENOFOVIR 300MG",
+      "Pack": "30 TAB",
+      "ImgName": "hepatitis-a-adult-vaccine.png"
+    },
+    {
+      "SrNo": 18,
+      "Type": "HIV Medicine",
+      "BrandName": "DANAVIR-R",
+      "Content": "DARUNAVIR 800MG +RITONAVIR 100MG",
+      "Pack": "30 TAB",
+      "ImgName": "hepatitis-a-adult-vaccine.png"
+    },
+    {
+      "SrNo": 19,
+      "Type": "HIV Medicine",
+      "BrandName": "DANAVIR-R 600",
+      "Content": "DARUNAVIR 600MG +RITONAVIR 100MG",
+      "Pack": "30 TAB",
+      "ImgName": "hepatitis-a-adult-vaccine.png"
+    },
+    {
+      "SrNo": 20,
+      "Type": "HIV Medicine",
+      "BrandName": "VIRATAZ-R",
+      "Content": "ATAZANAVIR 300MG + RITONAVIR 100MG ",
+      "Pack": "30 TAB",
+      "ImgName": "hepatitis-a-adult-vaccine.png"
+    },
+    {
+      "SrNo": 21,
+      "Type": "HIV Medicine",
+      "BrandName": "RITOCOM",
+      "Content": "LOPINAVIR 200MG + RITONAVIR 50MG",
+      "Pack": "30 TAB",
+      "ImgName": "hepatitis-a-adult-vaccine.png"
     }
-  ]
-,
-  "productType":[
+  ],
+  "productType": [
     "Oncology",
     "Anti Serum",
     "Vaccines",
