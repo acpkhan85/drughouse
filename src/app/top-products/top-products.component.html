@@ -1,0 +1,149 @@
+<!-- <section id="products" class="home-section bg-gray paddingbot-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="page-title">Home > Products</div>
+                </div>
+                <hr>
+                <div *ngIf="showLoader">
+                    Loading...
+                </div>
+                <div class="row" *ngFor="let item of products">
+                    <div class="col-lg-12">
+                        <div class="card col-lg-3">
+                            <a [routerLink]="['/product-detail', item.id]" href="javascript:void(0);">
+                                <ng-container>
+                                    <img *ngIf="item.ImgName" src="assets/img/products/{{item.ImgName}}"
+                                        alt="{{item.ImgName}}" style="width:100%">
+                                    <img *ngIf="!item.ImgName" src="assets/img/products/no-image-available.png"
+                                        alt="{{item.ImgName}}" style="width:100%">
+                                </ng-container>
+
+                                <div class="product-name">{{item.brands}}</div>
+                                <div class="content">{{item.content}}</div>
+                                <div class="pack">{{item.pack}}</div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<section id="doctor" class="home-section bg-gray paddingbot-60">
+    <div class="container marginbot-50">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="wow fadeInDown animated" data-wow-delay="0.1s"
+                    style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInDown;">
+                    <div class="section-heading text-center">
+                        <h2 class="h-bold">Out Top Products</h2>
+                        <p>Give text to display here</p>
+                    </div>
+                </div>
+                <div class="divider-short"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">               
+                <div id="grid-container"
+                    class="cbp-l-grid-team cbp cbp-chrome cbp-caption-fadeIn cbp-animation-sequentially cbp-ready"
+                    style="height: 263px;">
+                    <ul class="cbp-wrapper" style="opacity: 1;">
+                        <li class="cbp-item psychiatrist" *ngFor="let item of products"
+                            style="width: 255px; height: 263px; transform: translate3d(0px, 0px, 0px);">
+                            <div class="cbp-item-wrapper">
+                                <a [routerLink]="['/product-detail', item.id]" href="javascript:void(0);" class="cbp-caption cbp-singlePage">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <ng-container>
+                                            <img *ngIf="item.ImgName" src="assets/img/products/{{item.ImgName}}"
+                                                alt="{{item.ImgName}}" width="100%">
+                                            <img *ngIf="!item.ImgName" src="assets/img/products/no-image-available.png"
+                                                alt="{{item.ImgName}}" width="100%">
+                                        </ng-container>                                        
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <div class="cbp-l-caption-text">VIEW DETAILS</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="doctors/member1.html" class="cbp-singlePage cbp-l-grid-team-name">{{item.brands}}</a>
+                                <div class="cbp-l-grid-team-position">{{item.content}}</div>
+                            </div>
+                        </li>
+                        <!-- <li class="cbp-item cardiologist"
+                            style="width: 255px; height: 263px; transform: translate3d(295px, 0px, 0px);">
+                            <div class="cbp-item-wrapper">
+                                <a href="doctors/member2.html" class="cbp-caption cbp-singlePage">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <img src="img/team/2.jpg" alt="" width="100%">
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="doctors/member2.html" class="cbp-singlePage cbp-l-grid-team-name">Joseph
+                                    Murphy</a>
+                                <div class="cbp-l-grid-team-position">Cardiologist</div>
+                            </div>
+                        </li>
+                        <li class="cbp-item cardiologist"
+                            style="width: 255px; height: 263px; transform: translate3d(590px, 0px, 0px);">
+                            <div class="cbp-item-wrapper">
+                                <a href="doctors/member3.html" class="cbp-caption cbp-singlePage">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <img src="img/team/3.jpg" alt="" width="100%">
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="doctors/member3.html" class="cbp-singlePage cbp-l-grid-team-name">Alison
+                                    Davis</a>
+                                <div class="cbp-l-grid-team-position">Cardiologist</div>
+                            </div>
+                        </li>
+                        <li class="cbp-item neurologist"
+                            style="width: 255px; height: 263px; transform: translate3d(885px, 0px, 0px);">
+                            <div class="cbp-item-wrapper">
+                                <a href="doctors/member4.html" class="cbp-caption cbp-singlePage">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <img src="img/team/4.jpg" alt="" width="100%">
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <div class="cbp-l-caption-text">VIEW PROFILE</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="doctors/member4.html" class="cbp-singlePage cbp-l-grid-team-name">Adam
+                                    Taylor</a>
+                                <div class="cbp-l-grid-team-position">Neurologist</div>
+                            </div>
+                        </li> -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

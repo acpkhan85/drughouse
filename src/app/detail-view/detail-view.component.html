@@ -2,30 +2,41 @@
 	<div class="container paddingbot-60">
 		<div class="card">
 			<div class="row">
-				<div class="page-title">Home > Products > HEPATITIS A ADULT VACCINE</div>
-			  </div>
-			  <hr>
+				<div class="page-title">Home > Products > <span>{{productDetails?.brands}}</span></div>
+			</div>
+			<hr>
 			<div class="container-fliud">
 				<div class="wrapper row">
 					<div class="preview col-md-6">
 
 						<div class="preview-pic tab-content">
-							<div class="tab-pane active" id="pic-1"><img src="assets/img/products/hepatitis-a-adult-vaccine.png" /></div>
-							<div class="tab-pane" id="pic-2"><img src="assets/img/products/hepatitis-a-adult-vaccine.png" /></div>
-							<div class="tab-pane" id="pic-3"><img src="assets/img/products/hepatitis-a-adult-vaccine.png" /></div>
-							<div class="tab-pane" id="pic-4"><img src="assets/img/products/hepatitis-a-adult-vaccine.png" /></div>
-							<div class="tab-pane" id="pic-5"><img src="assets/img/products/hepatitis-a-adult-vaccine.png" /></div>
-						  </div>
-						  <ul class="preview-thumbnail nav nav-tabs">
-							<li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="assets/img/products/hepatitis-a-adult-vaccine.png" /></a></li>
-							<li><a data-target="#pic-2" data-toggle="tab"><img src="assets/img/products/hepatitis-a-adult-vaccine.png" /></a></li>
-							<li><a data-target="#pic-3" data-toggle="tab"><img src="assets/img/products/hepatitis-a-adult-vaccine.png" /></a></li>
-							<li><a data-target="#pic-4" data-toggle="tab"><img src="assets/img/products/hepatitis-a-adult-vaccine.png" /></a></li>
-							<li><a data-target="#pic-5" data-toggle="tab"><img src="assets/img/products/hepatitis-a-adult-vaccine.png" /></a></li>
-						  </ul>
+							<div class="tab-pane active" id="pic-1"><img
+									src="assets/img/products/hepatitis-a-adult-vaccine.png" /></div>
+							<div class="tab-pane" id="pic-2"><img
+									src="assets/img/products/hepatitis-a-adult-vaccine.png" /></div>
+							<div class="tab-pane" id="pic-3"><img
+									src="assets/img/products/hepatitis-a-adult-vaccine.png" /></div>
+							<div class="tab-pane" id="pic-4"><img
+									src="assets/img/products/hepatitis-a-adult-vaccine.png" /></div>
+							<div class="tab-pane" id="pic-5"><img
+									src="assets/img/products/hepatitis-a-adult-vaccine.png" /></div>
+						</div>
+						<ul class="preview-thumbnail nav nav-tabs">
+							<li class="active"><a data-target="#pic-1" data-toggle="tab"><img
+										src="assets/img/products/hepatitis-a-adult-vaccine.png" /></a></li>
+							<li><a data-target="#pic-2" data-toggle="tab"><img
+										src="assets/img/products/hepatitis-a-adult-vaccine.png" /></a></li>
+							<li><a data-target="#pic-3" data-toggle="tab"><img
+										src="assets/img/products/hepatitis-a-adult-vaccine.png" /></a></li>
+							<li><a data-target="#pic-4" data-toggle="tab"><img
+										src="assets/img/products/hepatitis-a-adult-vaccine.png" /></a></li>
+							<li><a data-target="#pic-5" data-toggle="tab"><img
+										src="assets/img/products/hepatitis-a-adult-vaccine.png" /></a></li>
+						</ul>
 					</div>
 					<div class="details col-md-6">
-						<h3 class="product-title">Hepatitis A Adult Vaccine</h3>
+						<div [innerHTML]="productDetails?.detail"></div>
+						<!-- <h3 class="product-title">Hepatitis A Adult Vaccine</h3>
 						<div class="fram isq">
 							<table class="table">
 								<tbody>
@@ -70,12 +81,20 @@
 						<h5 class="sizes features">Features:</h5>
 						<ul><li>No side-effects</li><li>Quick result</li><li>Long shelf life</li></ul>
 						<h5 class="colors description">Descriptions:</h5>
-						<ul><li>HAVRIX® (hepatitis A vaccine, inactivated) is a sterile suspension containing formaldehyde-inactivated hepatitis A virus (HM175 hepatitis A virus strain) adsorbed onto aluminium hydroxide</li></ul>
+						<ul><li>HAVRIX® (hepatitis A vaccine, inactivated) is a sterile suspension containing formaldehyde-inactivated hepatitis A virus (HM175 hepatitis A virus strain) adsorbed onto aluminium hydroxide</li></ul> -->
 						<!-- <div class="action">
 							<button class="add-to-cart btn btn-default" type="button">add to cart</button>
 							<button class="like btn btn-default" type="button"><span
 									class="fa fa-heart"></span></button>
 						</div> -->
+
+						<h5 class="price" *ngIf="productDetails?.showPrice">Price: <span>{{productDetails?.price}}</span></h5>	
+						<div class="action" *ngIf="productDetails?.showEnquiry">
+							<button class="add-to-cart btn btn-default" type="button" (click)="showEnquiryPopup()">Yes! I am Interested</button>
+							<!-- <button class="like btn btn-default" type="button"><span
+									class="fa fa-heart"></span></button> -->
+						</div>
+						<contact-us></contact-us>
 					</div>
 				</div>
 			</div>

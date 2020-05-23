@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { AngularEditorConfig } from '@kolkov/angular-editor';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { ButtonRendererComponent } from '../renderer/button-renderer.component';
-import { FormGroup, Validators, FormControl, FormBuilder } from '@angular/forms';
-import { requiredFileType, toFormData } from '../fileupload/customvalidator';
+import { ProductsService } from '../products/products.service';
+import { SharedService } from '../shared/shared.service';
 
 @Component({
   selector: 'app-product-admin-view',
@@ -11,29 +10,19 @@ import { requiredFileType, toFormData } from '../fileupload/customvalidator';
 })
 export class ProductAdminViewComponent implements OnInit {
   frameworkComponents: any;
-  productForm: FormGroup;
-  constructor(private formBuilder: FormBuilder) {
-    this.frameworkComponents = {
-      buttonRenderer: ButtonRendererComponent,
-    }
-  }
 
-  ngOnInit(): void {
-    this.productForm = this.formBuilder.group({
-      name: ['', Validators.required],
-      detail: ['', Validators.required],
-      type: ['', Validators.required],
-      productImg: new FormControl(null, [Validators.required, requiredFileType('png|jpeg')]),
-      showPrice: ['', Validators.required],
-      showEnquiry: ['', Validators.required],
-      price: ['', Validators.required]
-    })
-  }
+  products: any;
+  productTypes: Array<string> = [];
+  alertClass = "";
+  alertMsg: string;
+  showAlert: boolean = false;
+  private gridApi;
   columnDefs = [
-    { headerName: 'Make', field: 'make', sortable: true, filter: true },
-    { headerName: 'Model', field: 'model', sortable: true, filter: true },
-    { headerName: 'Price', field: 'price', sortable: true, filter: true },
-    { headerName: 'Make1', field: 'make1', sortable: true, filter: true },
+    { headerName: 'Type', field: 'type', sortable: true, filter: true },
+    { headerName: 'Content', field: 'content', sortable: true, filter: true },
+    { headerName: 'Strength', field: 'strength', sortable: true, filter: true },
+    { headerName: 'Pack', field: 'pack', sortable: true, filter: true },
+    { headerName: 'Brands', field: 'brands', sortable: true, filter: true },
     {
       headerName: 'Edit',
       cellRenderer: 'buttonRenderer',
@@ -44,11 +33,49 @@ export class ProductAdminViewComponent implements OnInit {
     },
   ];
 
-  rowData = [
-    { make: 'Toyota', model: 'Celica', price: 35000, make1: "Toyota" },
-    { make: 'Ford', model: 'Mondeo', price: 32000, make1: "Toyota" },
-    { make: 'Porsche', model: 'Boxter', price: 72000, make1: "Toyota" }
-  ];
+  rowData: any;
+  // = [
+  //   { make: 'Toyota', model: 'Celica', price: 35000, make1: "Toyota" },
+  //   { make: 'Ford', model: 'Mondeo', price: 32000, make1: "Toyota" },
+  //   { make: 'Porsche', model: 'Boxter', price: 72000, make1: "Toyota" }
+  // ];
+  constructor(private productsvc: ProductsService, private sharedService: SharedService) {
+    this.frameworkComponents = {
+      buttonRenderer: ButtonRendererComponent,
+    }
+  }
+
+  ngOnInit(): void {
+    this.productsvc.getProduct().subscribe((res) => {
+      this.rowData = res;
+      res.forEach(element => {
+        if (this.productTypes.indexOf(element.type) == -1) {
+          this.productTypes.push(element.type);
+        }
+      });
+      this.sharedService.setProductTypes(this.productTypes);
+    });
+    this.sharedService._productResponseChange.subscribe((data) => {
+      if (data && data.messages[0].code == "0000") {
+        this.alertClass = "success";
+        const index = this.rowData.findIndex((e) => e.id === data.product.id);
+        if (index === -1) {
+          this.rowData.push(data.product);
+        } else {
+          this.rowData[index] = data.product;
+        }
+        this.gridApi.setRowData(this.rowData); // Refresh grid     
+      }
+      else {
+        this.alertClass = "error";
+      }
+      this.alertMsg = data.messages[0].detail;
+      if (this.alertMsg) {
+        this.showAlert = true;
+      }
+    });
+  }
+
 
   onEditClick(e) {
     console.log("Edit button clicked");
@@ -59,74 +86,13 @@ export class ProductAdminViewComponent implements OnInit {
 
 
   onGridReady(params) {
+    this.gridApi = params.api;
     params.api.sizeColumnsToFit();
   }
 
-  editorConfig: AngularEditorConfig = {
-    editable: true,
-    spellcheck: true,
-    height: '300px',
-    minHeight: '0',
-    maxHeight: 'auto',
-    width: 'auto',
-    minWidth: '0',
-    translate: 'yes',
-    enableToolbar: true,
-    showToolbar: true,
-    placeholder: 'Enter text here...',
-    defaultParagraphSeparator: '',
-    defaultFontName: 'Times New Roman',
-    defaultFontSize: '11px',
-    fonts: [
-      { class: 'arial', name: 'Arial' },
-      { class: 'times-new-roman', name: 'Times New Roman' },
-      { class: 'calibri', name: 'Calibri' },
-      { class: 'comic-sans-ms', name: 'Comic Sans MS' }
-    ],
-    customClasses: [
-      {
-        name: 'quote',
-        class: 'quote',
-      },
-      {
-        name: 'redText',
-        class: 'redText'
-      },
-      {
-        name: 'titleText',
-        class: 'titleText',
-        tag: 'h1',
-      },
-    ],
-    uploadUrl: 'v1/image',
-    uploadWithCredentials: false,
-    sanitize: true,
-    toolbarPosition: 'top',
-    toolbarHiddenButtons: [
-      ['strikeThrough', 'justifyLeft',
-        'justifyCenter',
-        'justifyRight',
-        'justifyFull',
-        'indent',
-        'outdent'],
-      ['customClasses',
-        'link',
-        'unlink',
-        'insertImage',
-        'insertVideo',
-        'insertHorizontalRule',
-        'removeFormat',
-        'toggleEditorMode']
-    ]
-  };
-
-  onSubmit() {
-
-    if (this.productForm.invalid) {
-      return;
-    }
-    console.log(toFormData(this.productForm.value));
+  showPopup() {
+    console.log("in showPopup");
+    this.sharedService.setProduct(new Object());
+    this.sharedService.showPopup(true);
   }
-
-
 }

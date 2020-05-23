@@ -1,5 +1,5 @@
 <section id="products" class="home-section bg-gray paddingbot-60">
-  
+
 
   <div class="container">
     <div class="row">
@@ -10,35 +10,49 @@
 
           <!-- BEGIN FILTER BY CATEGORY -->
           <div class="filter-name">Product</div>
+          <div *ngIf="showLoader">
+            Loading...
+          </div>
           <div class="checkbox" *ngFor="let productType of productTypes">
             <label><input type="checkbox" (change)="changed($event,productType)" class="icheck"> {{productType}}</label>
-          </div>          
+          </div>
           <!-- END FILTER BY CATEGORY -->
 
           <div class="padding"></div>
 
-          
 
-          <div class="padding"></div>         
+
+          <div class="padding"></div>
         </div>
         <div class="col-md-1 space"></div>
         <div class="col-md-9 search-result">
-          <div class="row"><div class="page-title">Home > Products</div></div>
-          <hr>         
+          <div class="row">
+            <div class="page-title">Home > Products</div>
+          </div>
+          <hr>
+          <div *ngIf="showLoader">
+            Loading...
+          </div>
           <div class="row" *ngFor="let item of arr">
-            <div class="col-lg-12" >
+            <div class="col-lg-12">
               <div class="card col-lg-3" *ngFor="let obj of item">
-                <a href="javascript:void(0);">
-                  <img src="assets/img/products/{{obj.ImgName}}" alt="Denim Jeans" style="width:100%">
-                  <div class="product-name">{{obj.BrandName}}</div>
-                  <div class="content">{{obj.CONTENT}}</div>
-                  <div class="pack">{{obj.Pack}}</div>                 
+                <a [routerLink]="['/product-detail', obj.id]"  href="javascript:void(0);">
+                  <ng-container>
+                    <img *ngIf="obj.ImgName" src="assets/img/products/{{obj.ImgName}}" alt="{{obj.ImgName}}"
+                      style="width:100%">
+                    <img *ngIf="!obj.ImgName" src="assets/img/products/no-image-available.png" alt="{{obj.ImgName}}"
+                      style="width:100%">
+                  </ng-container>
+
+                  <div class="product-name">{{obj.brands}}</div>
+                  <div class="content">{{obj.content}}</div>
+                  <div class="pack">{{obj.pack}}</div>
                 </a>
               </div>
-              
+
             </div>
           </div>
-         
+
         </div>
       </div>
     </div>

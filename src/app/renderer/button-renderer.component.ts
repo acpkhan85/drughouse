@@ -2,21 +2,26 @@
 
 import { Component } from '@angular/core';
 import { ICellRendererAngularComp } from 'ag-grid-angular';
+import { SharedService } from '../shared/shared.service';
 
 
 @Component({
-  selector: 'app-button-renderer',
-  template: `
-  <button type="button" class="btn btn-info btn-sm add-product" data-toggle="modal" data-target="#myModal">Edit</button>
-    `
+  selector: 'button-renderer',
+  templateUrl: './button-renderer.component.html',
 })
 
 export class ButtonRendererComponent implements ICellRendererAngularComp {
+  constructor(private sharedService: SharedService) {
 
+  }
   params;
   label: string;
+  id: string;
 
   agInit(params): void {
+    console.log("in agInit");
+    console.log(params.data);
+    this.id = params.data._id.timestamp;
     this.params = params;
     this.label = this.params.label || null;
   }
@@ -36,5 +41,10 @@ export class ButtonRendererComponent implements ICellRendererAngularComp {
       this.params.onClick(params);
 
     }
+  }
+  showPopup() {
+    console.log("in showPopup");
+    this.sharedService.setProduct(this.params.data);
+    this.sharedService.showPopup(true);
   }
 }

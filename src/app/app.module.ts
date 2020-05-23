@@ -25,6 +25,10 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
 import { ButtonRendererComponent } from './renderer/button-renderer.component';
 import { FileuploadComponent } from './fileupload/fileupload.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EditProductComponent } from './edit-product/edit-product.component';
+import { SharedService } from './shared/shared.service';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { TopProductsComponent } from './top-products/top-products.component';
 
 const appRoutes: Routes = [
   { path: 'product-detail', component: DetailViewComponent }
@@ -48,7 +52,10 @@ const appRoutes: Routes = [
     PartnerComponent,
     TestimonialComponent,
     ProductAdminViewComponent,
-    FileuploadComponent
+    FileuploadComponent,
+    EditProductComponent,
+    ContactUsComponent,
+    TopProductsComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +68,7 @@ const appRoutes: Routes = [
     AngularEditorModule,
     ReactiveFormsModule 
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
